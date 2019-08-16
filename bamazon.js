@@ -33,7 +33,7 @@ function purchaseItems() {
           choices: function() {
             var choiceArray = [];
             for (var i = 0; i < results.length; i++) {
-              choiceArray.push(results[i].product_name + " | " + "$"+ results[i].price);
+              choiceArray.push(results[i].product_name);
             }
             return choiceArray;
           },
@@ -49,10 +49,16 @@ function purchaseItems() {
         // get the information of the chosen item
         var chosenItem;
         for (var i = 0; i < results.length; i++) {
-          if (results[i].product_name === answer.choice) {
+          // console.log(results[i].product_name)
+          console.log("answer:",answer)
+          if (results[i].product_name == answer.choice) {
             chosenItem = results[i];
+            console.log("chosen inside ", chosenItem)
+            console.log("here")
+            //console.log(chosenItem);
           }
         }
+
         // determine if stock quantitiy is great than or = to desired quantity
         if (chosenItem.stock_quantitiy >= parseInt(answer.quantitiy)) {
     
