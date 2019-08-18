@@ -5,19 +5,19 @@
 * department_name
 * price (cost to customer)
 * stock_quantity (how much of the product is available in stores)
-![mySQL image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
 
 ## bamazon.js
 Using inquirer you are able to run bamazonCustomer.js which will display all items available for sale. The app prompts users with two messages:
 * What product they would like to buy
 * How many units of the product they would like to buy
-![bamazon.js question image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
+![bamazon.js question image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/Start.png)
 
 Once the customer has placed the order, the application will check if your store has enough of the product to meet the customer's request. 
 * If there is enough quantity the order will be placed and prompt user for $ due.
-![bamazon.js purchase image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
+![bamazon.js purchase1 image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/purchase1.png)
+![bamazon.js purchase2 image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/purchase2.png)
 * If there is not enough quantity the user will prompt will a blocking message
-![bamazon.js no-purchase image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
+![bamazon.js no-purchase image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/failed_purchase.png)
   
 The DB will be updated to reflect the new quantity, post purchase. 
 
