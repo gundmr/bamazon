@@ -34,6 +34,7 @@ function purchaseItems() {
             var choiceArray = [];
             for (var i = 0; i < results.length; i++) {
               choiceArray.push(results[i].product_name);
+              //create another variable that will store the concatenated name + price
             }
             return choiceArray;
           },
@@ -47,14 +48,14 @@ function purchaseItems() {
       ])
       .then(function(answer) {
         // get the information of the chosen item
-        var chosenItem;
+        //var chosenItem;
         for (var i = 0; i < results.length; i++) {
           // console.log(results[i].product_name)
-          console.log("answer:",answer)
+          //console.log("answer:",answer)
           if (results[i].product_name == answer.choice) {
             chosenItem = results[i];
-            console.log("chosen inside ", chosenItem)
-            console.log("here")
+            //console.log("chosen inside ", chosenItem)
+            //console.log("here")
             //console.log(chosenItem);
           }
         }
@@ -74,7 +75,7 @@ function purchaseItems() {
               },
             ],
             function(error) {
-              console.log(chosenItem);
+              //console.log(chosenItem);
               if (error) throw err;
               console.log("Order Has Been Placed for: " + answer.quantitiy + " " + chosenItem.product_name);
               console.log("Your Purchase Total is: $" + answer.quantitiy * chosenItem.price);
