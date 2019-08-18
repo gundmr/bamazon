@@ -25,13 +25,18 @@ The DB will be updated to reflect the new quantity, post purchase.
 # Manager View
 ## bamazonManager.js
 Using inquirer you are able to run bamazonManager.js which will display all items available for sale. The app prompts managers with following options for requests/functions:
+![bamazon.js no-purchase image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/manager_list.png)
+
+
 * View Products for Sale: app should list every available item: the item IDs, names, prices, and quantities
-  ![bamazonManager.js available image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
+  ![bamazonManager.js available image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/available.png)
 * View Low Inventory: list all items with an inventory count lower than five
-  ![bamazonManager.js low image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
+  ![bamazonManager.js low image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/low_inventory.png)
 * Add to Inventory: display a prompt that will let the manager "add more" of any item currently in the store
-  ![bamazonManager.js low image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
+  ![bamazonManager.js add image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/add_inventory1.png)
+    ![bamazonManager.js add2 image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/add_inventory2.png)
 * Add New Product: allow the manager to add a completely new product to the store 
-  ![bamazonManager.js new image](https://raw.githubusercontent.com/gundmr/liri-node-app/master/concert.png)
+  ![bamazonManager.js new image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/new_product1.png)
+    ![bamazonManager.js new2 image](https://raw.githubusercontent.com/gundmr/bamazon/master/images/new_product2.png)
 
 
